@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gigmarklet</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+ <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <ul class="nav">
+          <% if @auth %>
+            <li><%= link_to 'Home', root_path %> </li>
+            <li><%= link_to 'Logout', logout_path, :method => :delete %></li>
+            <li><%= link_to 'My Events', events_path %></li>
+          <% else %>
+            <li><%= link_to 'Home', root_path  %></li>
+            <li><%= link_to 'Login', login_path %></li>
+            <li><%= link_to 'Register', register_path %></li>
+          <% end %>
+       </ul> <!-- end navpills -->
+      </div> <!-- end navbar inner -->
+    </div> <!-- ends container -->
+  </div> <!-- end navbar -->
+
+<div class="container-fluid" id="main">
+
+  <%= yield %>
+
+  <footer>
+    <p> Coded w/ <i class="icon-heart"></i> and <i class="icon-headphones"></i> by <a href="http://twitter.com/whitperson" target="_blank">@whitperson</a></p>
+  </footer>
+
+</div> <!-- ends container -->
+
+</body>
+</html>

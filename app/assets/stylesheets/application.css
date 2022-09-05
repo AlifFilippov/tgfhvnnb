@@ -1,0 +1,184 @@
+/*
+ *= require_self
+ *= require 'css/bootstrap.css'
+ */
+
+/*------------
+HOMEPAGE SYLES
+--------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Text+Me+One);
+@import url(http://fonts.googleapis.com/css?family=Nova+Square);
+
+a:link
+{
+ color: #EB5A00;
+}
+
+a:active
+{
+  color: #EB5A00;
+}
+
+a:hover
+{
+  color: #EB5A00;
+}
+
+.nav li
+{
+  color: #EB5A00;
+  font-family: 'Nova Square', cursive;
+}
+
+.form
+{
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+.form h2
+{
+  color: #EB5A00;
+  font-family: 'Nova Square', cursive;
+}
+
+input.btn
+{
+  color: #EB5A00;
+  font-family: 'Nova Square', cursive;
+}
+
+footer
+{
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+
+/*------------
+HOMEPAGE SYLES
+--------------*/
+
+.hero-unit .intro
+{
+  font-family: 'Nova Square', cursive;
+  color: #EB5A00;
+}
+
+
+#main
+{
+  background-color: #EDEDED;
+  font-family: 'Nova Square', cursive;
+}
+
+#hero
+{
+  text-align: center;
+  padding-bottom: 1%;
+  padding-top: 3%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 1%;
+  background-color: #ADADAD;
+  border: 2px solid #474747;
+  border-radius: 8px;
+}
+
+#add_url form
+{
+  margin: 0%;
+}
+#add_url_button
+{
+  font-family: 'Nova Square', cursive;
+  color: #EB5A00;
+  margin-top: -1%;
+  border-radius: 3px;
+}
+
+#add_url input[type="text"]
+{
+   font-family: 'Nova Square', cursive;
+}
+
+#features
+{
+  font-family: 'Nova Square', cursive;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.feature
+{
+  font-family: 'Nova Square', cursive;
+  float:none;
+}
+
+.feature li
+{
+  font-size: 1.25em;
+}
+
+.feature li a
+{
+  color: #EB5A00;
+}
+
+a#bookmarklet
+{
+  color: #EB5A00;
+  font-family: 'Nova Square', cursive;
+}
+
+/*-----------------
+EVENTS PAGE SYLES
+------------------*/
+
+#myEvents
+{
+  margin: 5%;
+  margin-left: 1%;
+
+}
+
+#myEvents h2
+{
+  border-bottom: 1px solid #EB5A00;
+  margin-bottom: 3%;
+  padding-bottom: 2%;
+}
+
+
+.event ul
+{
+  margin-left: 0%;
+  border-bottom: 1px solid #EB5A00;
+  margin-bottom: 1%;
+}
+
+.event li
+{
+  list-style: none;
+}
+
+.event li:last-child {
+  margin-bottom: 1%;
+}
+
+.event li a
+{
+ color: #EB5A00;
+}
+
+.event li a:active
+
+{
+  color: #EB5A00;
+}
+
+.event li a:hover
+{
+  color: #EB5A00;
+}
+

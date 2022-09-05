@@ -1,0 +1,5 @@
+   <%= form_tag('/events') do %>
+    <%= text_field_tag(:u, nil, :placeholder => 'Manually add a URL for event') %>
+    <%= submit_tag('save event', :id => 'add_url_button', :class=> 'btn btn-inverse')%>
+  <% end %>
+

@@ -1,0 +1,27 @@
+
+<div id="myEvents">
+
+    <h2>\m/  My Saved Events  \m/</h2>
+
+    <div class="event">
+
+      <% @events.each do |event| %>
+      <ul>
+            <li> <h4> <%= link_to "#{event.name if event.name}", event.tickets, :target => "_blank" %> </h4> </li>
+            <li> <h4> headliner: <%= event.artist %></h4>
+            <%= event.support if event.support %> </li>
+            <h5> <li> <i class="icon-home"></i> venue: <%= event.venue %></li>
+            <li> <i class="icon-calendar"></i> date/time: <%= event.event_date %> </li>
+            <li> <i class="icon-map-marker"></i> <%= event.location %> </li>
+            <li> <i class="icon-tag"></i> <%= link_to 'Buy Tickets', event.tickets, :target => "_blank" %> </li> </h5>
+            <li> <i class="icon-edit"></i> <%= link_to 'Edit', edit_event_path(event) %> | <i class="icon-trash"></i>
+            <%= link_to 'Delete', event, method: :delete, data: { confirm: 'Duder, you sure you want to trash this show?' } %> </li>
+        </ul>
+      <% end %>
+    </div><!-- end event-->
+
+</div> <!-- end myEvents-->
+
+
+
+

@@ -1,0 +1,29 @@
+<div class="form">
+<h2>Register</h2>
+
+<%= form_tag do %>
+  <div class='field'>
+    <%= label_tag 'name' %>
+    <%= text_field_tag 'register[name]' %>
+  </div>
+
+  <div class='field'>
+    <%= label_tag 'email address' %>
+    <%= text_field_tag 'register[email]' %>
+  </div>
+
+  <div class='field'>
+    <%= label_tag 'password' %>
+    <%= password_field_tag 'register[password]' %>
+  </div>
+
+  <div class='field'>
+    <%= label_tag 'confirmation' %>
+    <%= password_field_tag 'register[password_confirmation]'%>
+  </div>
+
+  <div class='field'>
+    <%= submit_tag 'Register', :class => 'btn btn-inverse' %>
+  </div>
+<% end %>
+</div>

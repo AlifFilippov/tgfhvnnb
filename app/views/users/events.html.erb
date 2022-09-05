@@ -1,0 +1,16 @@
+
+<div class="event">
+  <%= @events.each do |event| %>
+    <div class="link"> <h3> <%= link_to "event link", event.link %> </h3> </div>
+    <div class="artist"> <h4> <%= event.artist %> </h4> </div>
+    <div class="date"><%= event.event_date %></div>
+    <div class="venue"><%= event.venue %></div>
+    <div class="location"><%= event.location %></div>
+    <div class='links'>
+        <%= link_to 'Edit', edit_event_path(event) %>
+        <%= link_to 'Delete', event, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  <% end %>
+
+</div>
+
